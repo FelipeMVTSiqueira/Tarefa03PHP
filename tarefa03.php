@@ -79,3 +79,15 @@
     } while ($i<count($nomes));
     echo "<br>"."<br>";
 ?>
+
+<?php
+    $arrayatorio=[];
+    for($i=0;$i<10;$i++){
+        array_push($arrayatorio,rand(0,10));
+        echo $arrayatorio[$i]."<br>";
+        if($arrayatorio[$i]==5){
+            echo "Encontramos um número 5!";
+            break;
+        }
+    }
+?>
