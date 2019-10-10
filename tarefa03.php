@@ -108,3 +108,19 @@
     }
     echo "<br>"."<br>";
 ?>
+
+<?php
+    $arrayatorio=[];
+    $i=0;
+    do {
+        array_push($arrayatorio,rand(0,10));
+        if($i==5){
+            echo $i."<br>"."Encontramos um número 5!"."<br>";
+            break;
+        } else {
+        echo $arrayatorio[$i]."<br>";
+        $i++;
+        }
+    } while ($i<10);
+    echo "<br>"."<br>";
+?>
