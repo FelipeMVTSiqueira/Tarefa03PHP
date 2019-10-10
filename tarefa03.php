@@ -43,3 +43,10 @@
     } while ($qntCara<5);
     echo "Levaram ".$qntLancamento." lançamentos!"."<br>"."<br>";
 ?>
+
+<?php
+    $nomes=["Luiz","Maria","Gabriel","Felipe","Victoria"];
+    for ($i=0;$i<count($nomes);$i++){
+        echo $nomes[$i]."<br>";
+    }
+?>
