@@ -124,3 +124,14 @@
     } while ($i<10);
     echo "<br>"."<br>";
 ?>
+
+<?php
+    $array=[];
+    $i=0;
+    foreach (range("a", "n") as $letter) {
+        array_push($array,$letter);
+        echo "Na posição ".$i." está o valor ".$array[$i]."<br>";
+        $i++;
+    }
+    echo "<br>"."<br>";
+?>
