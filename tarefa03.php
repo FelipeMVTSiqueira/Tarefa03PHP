@@ -27,6 +27,19 @@
             $qntCara;
             echo "Coroa"."<br>"."<br>";
             }
-        }
-echo "Levaram ".$qntLancamento." lançamentos!"."<br>"."<br>";
+        } echo "Levaram ".$qntLancamento." lançamentos!"."<br>"."<br>";
+?>
+
+<?php
+    $qntCara = 0;
+    $qntLancamento = 0;
+    do {
+        $moeda=rand(0,1);
+        $qntLancamento++;
+        if ($moeda==1){
+            $qntCara++;
+            echo "Cara"."<br>"."<br>";
+        } else echo "Coroa"."<br>"."<br>";
+    } while ($qntCara<5);
+    echo "Levaram ".$qntLancamento." lançamentos!"."<br>"."<br>";
 ?>
