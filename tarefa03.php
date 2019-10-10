@@ -135,3 +135,18 @@
     }
     echo "<br>"."<br>";
 ?>
+
+<?php
+    $i=0;
+    $mascote = [
+        "Animal"=>"Tubarão",
+        "Idade"=>50,
+        "Altura"=>6,
+        "Nome"=>"Jaws"
+    ];
+    foreach ($mascote as $dado=>$d_valor){
+        echo $dado." = ".$d_valor."<br>";
+        $i++;
+    }
+    echo "<br>"."<br>";
+?>
