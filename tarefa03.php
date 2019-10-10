@@ -59,3 +59,13 @@
     }
     echo "<br>"."<br>";
 ?>
+
+<?php
+    $nomes=["Luiz","Maria","Gabriel","Felipe","Victoria"];
+    $i=0;
+    while ($i<count($nomes)){
+        echo $nomes[$i]."<br>";
+        $i++;
+    }
+    echo "<br>"."<br>";
+?>
