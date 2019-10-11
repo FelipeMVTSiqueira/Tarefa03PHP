@@ -179,20 +179,19 @@
 
 <?php
     $paises = [
-        "Argentina" => ["Buenos Aires", "Córdoba", "Santa Fé","naAmerica"],
-        "Brasil" => ["Brasília", "Rio de Janeiro", "São Paulo", "naAmerica"],
-        "Colômbia" => ["Cartagena", "Bogotá", "Barranquilla", "naAmerica"],
+        "Argentina" => ["Buenos Aires", "Córdoba", "Santa Fé"], ["naAmerica"],
+        "Brasil" => ["Brasília", "Rio de Janeiro", "São Paulo"], ["naAmerica"],
+        "Colômbia" => ["Cartagena", "Bogotá", "Barranquilla"], ["naAmerica"],
         "França" => ["Paris", "Nantes", "Lyon"],
         "Itália" => ["Roma", "Milão", "Veneza"],
-        "Alemanha" => ["Munique", "Berlim", "Frankfurt"]
+        "Alemanha" => ["Munique", "Berlim", "Frankfurt"],
     ];
     foreach ($paises as $pais => $cidades) {
         echo "As cidades de ".$pais." que estão na América são:"."<br>"."<br>";
         foreach ($cidades as $city) {
-            if("naAmerica"){
+            if("naAmerica"==true){
             echo "<li>".$city."</li>"."<br>";
-            }
+            } else break;
         }
       }
 ?>
-
