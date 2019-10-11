@@ -179,19 +179,23 @@
 
 <?php
     $paises = [
-        "Argentina" => ["Buenos Aires", "Córdoba", "Santa Fé"], ["naAmerica"],
-        "Brasil" => ["Brasília", "Rio de Janeiro", "São Paulo"], ["naAmerica"],
-        "Colômbia" => ["Cartagena", "Bogotá", "Barranquilla"], ["naAmerica"],
-        "França" => ["Paris", "Nantes", "Lyon"],
-        "Itália" => ["Roma", "Milão", "Veneza"],
-        "Alemanha" => ["Munique", "Berlim", "Frankfurt"],
+        "Argentina" => ["Buenos Aires", "Córdoba", "Santa Fé"], ["naAmerica"=>true],
+        "Brasil" => ["Brasília", "Rio de Janeiro", "São Paulo"], ["naAmerica"=>true],
+        "Colômbia" => ["Cartagena", "Bogotá", "Barranquilla"], ["naAmerica"=>true],
+        "França" => ["Paris", "Nantes", "Lyon"], ["naAmerica"=>false],
+        "Itália" => ["Roma", "Milão", "Veneza"], ["naAmerica"=>false],
+        "Alemanha" => ["Munique", "Berlim", "Frankfurt"], ["naAmerica"=>false],
     ];
     foreach ($paises as $pais => $cidades) {
+        var_dump($cidades);
+        exit;
+        if("naAmerica"==true){
         echo "As cidades de ".$pais." que estão na América são:"."<br>"."<br>";
         foreach ($cidades as $city) {
-            if("naAmerica"==true){
             echo "<li>".$city."</li>"."<br>";
-            } else break;
+            }
+        } else {
+            echo "Pais nao esta na America";
         }
       }
 ?>
