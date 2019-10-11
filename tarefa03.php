@@ -155,7 +155,24 @@
     $ceu = ["Itália"=>"Roma", "Luxemburgo"=>"Luxemburgo", "Bélgica"=> "Bruxelas", "Dinamarca"=>"Copenhagen", "Finlândia"=>"Helsinki", "França" => "Paris", "Eslováquia"=>"Bratislava", "Eslovênia"=>"Liubliana", "Alemanha" => "Berlim", "Grécia" => "Atenas", "Irlanda"=>"Dublin", "Holanda"=>"Amsterdã", "Portugal"=>"Lisboa", "Espanha"=>"Madri", "Suécia"=>"Estocolmo", "Reino Unido"=>"Londres", "Chipre"=>"Nicósia", "Lituânia"=>"Vilnius", "República Tcheca"=>"Praga", "Estônia"=>"Tallinn", "Hungria"=>"Budapeste", "Letônia"=>"Riga", "Malta"=>"Valletta", "Áustria" => "Viena", "Polônia"=>"Varsóvia"];
     foreach ($ceu as $pais=>$capital){
         echo "A Capital de ".$pais." é ".$capital."."."<br>";
-        $i++;
+    }
+    echo "<br>"."<br>";
+?>
+
+<?php
+    $ceu = [
+        "Argentina" => ["Buenos Aires", "Córdoba", "Santa Fé"],
+        "Brasil" => ["Brasília", "Rio de Janeiro", "São Paulo"],
+        "Colômbia" => ["Cartagena", "Bogotá", "Barranquilla"],
+        "França" => ["Paris", "Nantes", "Lyon"],
+        "Itália" => ["Roma", "Milão", "Veneza"],
+        "Alemanha" => ["Munique", "Berlim", "Frankfurt"]
+    ];
+    foreach ($ceu as $pais=>$cidades){
+        echo "As cidades de ".$pais." são:"."<br>"."<br>";
+        foreach ($cidades as $city){
+          echo "<li>".$city."</li>"."<br>";
+        }
     }
     echo "<br>"."<br>";
 ?>
