@@ -146,7 +146,6 @@
     ];
     foreach ($mascote as $dado=>$d_valor){
         echo $dado." = ".$d_valor."<br>";
-        $i++;
     }
     echo "<br>"."<br>";
 ?>
@@ -187,15 +186,13 @@
         "Alemanha" => ["Munique", "Berlim", "Frankfurt"], ["naAmerica"=>false],
     ];
     foreach ($paises as $pais => $cidades) {
-        var_dump($cidades);
-        exit;
-        if("naAmerica"==true){
+        if(["naAmerica"]==true){
         echo "As cidades de ".$pais." que estão na América são:"."<br>"."<br>";
         foreach ($cidades as $city) {
             echo "<li>".$city."</li>"."<br>";
             }
-        } else {
-            echo "Pais nao esta na America";
-        }
+        } else { 
+            echo "O ".$pais." não está na América!"."<br";
+        } exit;
       }
 ?>
